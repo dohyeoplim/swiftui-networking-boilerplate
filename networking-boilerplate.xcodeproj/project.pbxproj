@@ -8,21 +8,93 @@
 
 /* Begin PBXBuildFile section */
 		9C5B46E52E3A1519009EB1A0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9C5B46E42E3A1519009EB1A0 /* Kingfisher */; };
+		9CC13E302E3A4F9400EC2996 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC13E2D2E3A4F9400EC2996 /* App.swift */; };
+		9CC13E3A2E3A4F9400EC2996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC13E2E2E3A4F9400EC2996 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C5B46AB2E39F393009EB1A0 /* networking-boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "networking-boilerplate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC13E2D2E3A4F9400EC2996 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		9CC13E2E2E3A4F9400EC2996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		9C5B46AD2E39F393009EB1A0 /* Sources */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Sources;
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9CC13E542E3A514500EC2996 /* Exceptions for "Models" folder in "networking-boilerplate" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Recipe.swift,
+			);
+			target = 9C5B46AA2E39F393009EB1A0 /* networking-boilerplate */;
 		};
+		9CC13E552E3A514500EC2996 /* Exceptions for "Networking" folder in "networking-boilerplate" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Client.swift,
+				Pagination.swift,
+				Request.swift,
+			);
+			target = 9C5B46AA2E39F393009EB1A0 /* networking-boilerplate */;
+		};
+		9CC13E562E3A514500EC2996 /* Exceptions for "Repositories" folder in "networking-boilerplate" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				RecipesRepository.swift,
+			);
+			target = 9C5B46AA2E39F393009EB1A0 /* networking-boilerplate */;
+		};
+		9CC13E572E3A514500EC2996 /* Exceptions for "Views" folder in "networking-boilerplate" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ContentView.swift,
+				RecipeRowView.swift,
+				RecipesListView.swift,
+				SkeletonRowView.swift,
+			);
+			target = 9C5B46AA2E39F393009EB1A0 /* networking-boilerplate */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		9C5B46B92E39F3AC009EB1A0 /* Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		9CC13E3C2E3A514500EC2996 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9CC13E542E3A514500EC2996 /* Exceptions for "Models" folder in "networking-boilerplate" target */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9CC13E402E3A514500EC2996 /* Networking */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9CC13E552E3A514500EC2996 /* Exceptions for "Networking" folder in "networking-boilerplate" target */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9CC13E422E3A514500EC2996 /* Repositories */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9CC13E562E3A514500EC2996 /* Exceptions for "Repositories" folder in "networking-boilerplate" target */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9CC13E442E3A514500EC2996 /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9CC13E492E3A514500EC2996 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9CC13E572E3A514500EC2996 /* Exceptions for "Views" folder in "networking-boilerplate" target */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -43,8 +115,14 @@
 			isa = PBXGroup;
 			children = (
 				9C5B46B92E39F3AC009EB1A0 /* Tests */,
-				9C5B46AD2E39F393009EB1A0 /* Sources */,
 				9C5B46AC2E39F393009EB1A0 /* Products */,
+				9CC13E3C2E3A514500EC2996 /* Models */,
+				9CC13E402E3A514500EC2996 /* Networking */,
+				9CC13E422E3A514500EC2996 /* Repositories */,
+				9CC13E442E3A514500EC2996 /* ViewModels */,
+				9CC13E492E3A514500EC2996 /* Views */,
+				9CC13E2D2E3A4F9400EC2996 /* App.swift */,
+				9CC13E2E2E3A4F9400EC2996 /* Assets.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +150,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				9C5B46AD2E39F393009EB1A0 /* Sources */,
 				9C5B46B92E39F3AC009EB1A0 /* Tests */,
+				9CC13E442E3A514500EC2996 /* ViewModels */,
 			);
 			name = "networking-boilerplate";
 			packageProductDependencies = (
@@ -125,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CC13E3A2E3A4F9400EC2996 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CC13E302E3A4F9400EC2996 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
